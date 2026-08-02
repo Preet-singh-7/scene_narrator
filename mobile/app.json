@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Scene Narrator",
+    "slug": "scene-narrator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scene Narrator uses the camera to describe your surroundings out loud."
+      },
+      "bundleIdentifier": "com.preetsinghs.scene-narrator"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.preetsinghs.scenenarrator"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scene Narrator uses the camera to describe your surroundings out loud."
+        }
+      ]
+    ]
+  }
+}
